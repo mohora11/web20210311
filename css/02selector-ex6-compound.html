@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .note {
+            color: blue;
+        }
+
+        h1.note {
+            text-decoration: underline;
+        }
+
+        p.note {
+            background-color: yellow;
+        }
+
+        p,.note {
+            font-size: 70px;
+        }
+
+        h1.note.error {
+            font-size: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1 class="note">Lorem, ipsum dolor.</h1>
+    <h1 class="note error">Impedit, molestiae officia.</h1>
+    <h1 class="note error">Lorem, ipsum dolor.</h1>
+    <h1>Quas, dignissimos temporibus?</h1>
+    <p class="note">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolore nemo iste, officiis eveniet iure
+        pariatur quas nobis repudiandae, autem, rem omnis doloribus similique dicta! Voluptas architecto ullam quasi
+        beatae asperiores.</p>
+    <p>Voluptate voluptates fugiat iure iste incidunt, commodi quidem adipisci alias autem eius maiores debitis atque
+        omnis asperiores cumque labore nostrum quo sunt doloremque tempora nesciunt. Assumenda quo ullam illo libero.
+    </p>
+    <p>Est natus esse libero voluptas mollitia animi, qui reiciendis ducimus labore corporis necessitatibus. Veniam
+        voluptatibus sint dicta accusantium fugiat sit est nostrum quod labore eius? Quidem ex repellendus nisi esse.
+    </p>
+    <!-- p.note>lorem3 -->
+    <p class="note">Lorem, ipsum dolor.</p>
+    <!-- .note -->
+    <div class="note"></div>
+    <!-- div.note -->
+    <div class="note"></div>
+    <!-- p#para1>lorem2 -->
+    <p id="para1">Lorem, ipsum.</p>
+    <!-- h1#head1.note.error -->
+    <h1 id="head1" class="note error"></h1>
+</body>
+
+</html>

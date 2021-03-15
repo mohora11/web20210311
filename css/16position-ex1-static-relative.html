@@ -1,0 +1,33 @@
+<!DOCTYPE html
+<html>
+<head>
+<style>
+    .static-elem{
+        width:300px;
+        height:200px;
+        border: 5px solid green;
+        position: static;/*고정*/
+        /*위치이동
+        left, right, top, bottom*/
+        left: 200px;/*왼쪽으로 멀어짐*/
+        top: 200px;/*위에서 멀어짐*/
+    }
+    .relative-elem{
+        width:300px;
+        height:200px;
+        border: 5px solid green;
+        position: relative;
+        left:200px;
+        top:200px;
+    }
+</style>
+<body>
+
+    <div class="static-elem"></div>
+
+    <hr>
+
+    <div class="relative-elem"></div>
+    <p>Lorem ipsum dolor sit amet.</p>
+</body>
+</html>

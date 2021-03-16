@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .main {
+            padding: 0px;
+            margin: 0px;
+        }
+
+        .main>li {
+            box-sizing: border-box;
+            width: 200px;
+            height: 100px;
+            border: 5px solid green;
+            position: relative;
+
+        }
+
+        .sub {
+            padding: 0px;
+            margin: 0px;
+            position: absolute;
+            top: -5px;
+            left: 195px;
+            list-style-type: none;
+            display: none;
+
+        }
+
+        .sub>li {
+            box-sizing: border-box;
+            width: 200px;
+            height: 100px;
+            border: 5px solid blue;
+        }
+        .main>li:hover>.sub{
+            display:block;
+        }
+    </style>
+
+<body>
+    <!-- ul.main>li*5>lorem1 -->
+    <ul class="main">
+        <li>Lorem.
+            <!-- ul.sub>li*5>lorem1 -->
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Expedita?</li>
+                <li>At?</li>
+                <li>Totam.</li>
+                <li>Earum?</li>
+            </ul>
+        </li>
+        <li>Mollitia.
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Nisi.</li>
+                <li>Voluptatibus.</li>
+                <li>Cum!</li>
+                <li>Temporibus.</li>
+            </ul>
+        </li>
+        <li>Sint!
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Et.</li>
+                <li>Dolore.</li>
+                <li>Nobis.</li>
+                <li>Hic.</li>
+            </ul>
+        </li>
+        <li>Earum?
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Natus!</li>
+                <li>Perferendis.</li>
+                <li>Nisi!</li>
+                <li>Blanditiis.</li>
+            </ul>
+        </li>
+        <li>Architecto!
+            <ul class="sub">
+                <li>Lorem.</li>
+                <li>Eveniet?</li>
+                <li>Voluptatem.</li>
+                <li>Officiis?</li>
+                <li>Nesciunt!</li>
+            </ul>
+        </li>
+    </ul>
+</body>
+
+</html>

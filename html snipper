@@ -16,7 +16,7 @@
 	"my html":{
 		"prefix": "aa",
 		"body": [
-			"<!DOCTYPE html",
+			"<!DOCTYPE html">
 			"<html>",
 			"<head>",
 			"<style>",

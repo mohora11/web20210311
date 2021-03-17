@@ -21,6 +21,7 @@
 			"<head>",
 			"<style>",
 			"</style>",
+			"</head>",
 			"<body>",
 			"$1",
 			"</body>",

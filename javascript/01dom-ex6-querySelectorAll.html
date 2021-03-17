@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- h1.para*2>lorem1^p.para*2>lorem -->
+    <h1 class="para">Lorem.</h1>
+    <h1 class="para">Laboriosam.</h1>
+    <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis, tempora ad qui ullam inventore nobis
+        nam. Iusto illum debitis inventore, nisi commodi praesentium assumenda corporis facere aut recusandae delectus
+        magni.</p>
+    <p class="para">Laborum, repellat quaerat. Perferendis exercitationem deserunt est voluptas molestias vero libero
+        tempora error et quisquam, repellendus harum. Sint expedita sed saepe enim voluptatum consectetur. Eius
+        molestiae facilis deserunt qui officiis!</p>
+    <script>
+        var p = document.querySelectorAll("p.para");
+        console.log(p[0].innerHTML);//p엘멘과 para클의 첫번째//
+
+        var q = document.querySelectorAll(".para");
+        console.log(q[2].innerHTML);//para클의 2번째//
+
+    </script>
+</body>
+
+</html>

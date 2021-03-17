@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+    </style>
+</head>
+<!-- 자바스크립트는 왠지 뒤에서 앞을 캐내는 형식같다 -->
+<body>
+    <!-- h1#head1>lorem1 -->
+    <h1 id="head1">Lorem.</h1>
+    <script>
+        var x = document.getElementById("head1");
+        console.log(x.innerHTML);
+
+        x.innerHTML= "hello";
+        console.log(x.innerHTML);
+        //콘솔을 넣는 이유는 동작시간이 빨라 확인하기 위해서//
+        //head1을 출력한 이후 hello를 다시출력//
+
+    </script>
+</body>
+
+</html>

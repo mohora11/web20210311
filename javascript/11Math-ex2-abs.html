@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <!-- input*2#input$ -->
+    <input type="text" id="input1">
+    <input type="text" id="input2">
+
+    <br>
+
+    <!-- button{두 값의 차} -->
+    <button onclick="diff()">두 값의 차</button>
+
+    <p>두 값의 차이는 <span id="result"></span>입니다.</p>
+    <script>              //class
+        console.log(Math.abs(3));
+        console.log(Math.abs(0));
+        console.log(Math.abs(-3));
+        console.log(Math.abs(-10));
+
+        function diff() {
+            var c = Number(document.getElementById("input1").value);
+            var d = Number(document.getElementById("input2").value);
+            document.getElementById("result").innerHTML= Math.abs(c-d);
+            // document.getElementsByClassName("result")[0].innerHTML= Math.abs(c-d);
+                    //result를 id가 아닌 class로 선언했을경우 여러객체중에 첫번째이니 뒤에 
+                    // [0]을 넣어준다
+        }
+    </script>
+</body>
+
+</html>

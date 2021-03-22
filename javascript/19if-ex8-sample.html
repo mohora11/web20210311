@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="stylesheet" href="../css/all.min.css">
+    <style>
+    </style>
+</head>
+
+<body>
+    <input type="text">
+    <button onclick="add()"><i class="fas fa-plus"></i></button>
+
+    <!-- ul#result -->
+    <ul id="result"></ul>
+
+    <script>
+        function add() {
+            var text = document.querySelector("input").value
+            text = text.trim();
+            //공백도 생성되지 않는다 trim)여백을 없애줌
+            //ex) var a = "   a b c    " ---> a.trim() = abc 로 출력
+            var ul = document.getElementById("result");
+            // if (text !=""){ :빈칸인 경우 생성되지 않게 한다
+            if(text){ 
+            ul.innerHTML += "<li>" + text + "</li>";
+        }
+    }
+
+
+
+    </script>
+</body>
+
+</html>

@@ -10,19 +10,23 @@
 <body>
     <script>
 
-        function myfunc1() {
+        function myfunc1(a) {
             console.log(a);
         }
 
-        myfunc1(1);
-        myfunc1("helloe");
+        function myfunc2(a) {
+            a();
+        }
+
+        myfunc1(3);
+        myfunc1("hello");
 
         var f1 = function () {
             console.log("f1 function");
         }
 
         f1();
-        myfunc2(4);
+        myfunc2(f1);
     </script>
 
 </body>

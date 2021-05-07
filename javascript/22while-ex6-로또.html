@@ -13,11 +13,11 @@
     <button onclick="lotto()">번호 출력</button>
     <script>
         function lotto() {
-            var numbers = [];
+            var numbers = []; //numbers는 배열
 
-            while (numbers.length < 6) {
-                var newNumber = getRandomNumber();
-
+            while (numbers.length < 6) {  //numbers의 길이는 6보다 작다
+                var newNumber = getRandomNumber(); //newNumber는
+                                                   //getRandom 함수값과 같다
                 if (!numbers.includes(newNumber)) {//배열에 없을 때
                     numbers.push(newNumber);
                 }
@@ -31,7 +31,7 @@
 
         function getRandomNumber() {
             return Math.floor(Math.random() * 45) + 1;
-        }
+        }//랜덤숫자 1~45 리턴하는 함수 이름 getRandomNumber
 
     </script>
 </body>
